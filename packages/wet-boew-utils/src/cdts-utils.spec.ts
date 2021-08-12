@@ -1,4 +1,4 @@
-import { computeSoyScriptUrl, normalizeCdtsVersion } from "./cdts-utils";
+import { computeSoyScriptUrl, normalizeCdtsVersion } from "./ref-injection";
 
 describe("Cdts Utils", () => {
   describe("normalizing a CDTS version string", () => {

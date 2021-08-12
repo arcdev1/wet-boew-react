@@ -170,7 +170,7 @@ async function injectElement({
   });
 }
 
-function computeSoyScriptUrl(options: { version: CdtsVersion }) {
+export function computeSoyScriptUrl(options: { version: CdtsVersion }) {
   const version = normalizeCdtsVersion(options.version);
   return `https://www.canada.ca/etc/designs/canada/cdts/gcweb/${version}/cdts/compiled/soyutils.js`;
 }
@@ -189,7 +189,7 @@ function computeJqueryScriptUrl(options: { version: CdtsVersion }) {
   return `https://www.canada.ca/etc/designs/canada/cdts/gcweb/${version}/js/jquery/2.2.4/jquery.min.js`;
 }
 
-function normalizeCdtsVersion(version: CdtsVersion) {
+export function normalizeCdtsVersion(version: CdtsVersion) {
   if (version === "run" || version === "rn") return "rn";
   if (version.startsWith("v")) return version;
   return `v${version.replace(/\./g, "_")}`;
