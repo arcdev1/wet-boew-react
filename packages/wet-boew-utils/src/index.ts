@@ -1,7 +1,7 @@
 export { onAnchorClick } from "./routing";
 export { patchSearch } from "./search";
 export { setPageTitle } from "./page-meta";
-
+export { registerWetComponent } from "./wet";
 export {
   injectCdtsRefFooter,
   injectCdtsRefTop,
